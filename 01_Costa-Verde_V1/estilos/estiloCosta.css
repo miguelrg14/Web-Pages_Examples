@@ -1,0 +1,176 @@
+@media screen, print{
+    .h1{
+        font-size: xx-large;
+    }
+}
+/* Animaciones*/
+.cabecera{
+    animation-duration: 2s;
+    animation-name: slidein;
+    font-family:Arial;
+}
+.TarjetaImagen{
+    animation-duration: 5s;
+    animation-name: aparicionImagen;
+}
+@keyframes slidein
+{
+    from{
+        opacity: 0;
+        width: 0%;
+    }
+    to{
+        opacity: 1;
+        width: 100%;
+    }
+}
+@keyframes header
+{
+    from{
+        opacity: 0;
+        width: 0%;
+    }
+    to{
+        opacity: 1;
+        width: 80%;
+    }
+}
+@keyframes tarjeta
+{
+    from{
+        opacity: 0;
+        width: 0%;
+    }
+    to{
+        opacity: 1;
+        width: 100%;
+    }
+}
+@keyframes aparicionImagen
+{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+body {
+    margin: 0px;
+    background-color: #399E5A;
+  }
+
+h1{
+    font-family:Verdana;
+    text-decoration: underline;
+    text-align: center;
+}
+h2{
+    font-family:verdana;
+}
+p{
+    font-family:calibri;
+}
+a{
+    font-family:calibri;
+}
+
+.cabecera{
+    margin-top: 50px;
+    font-size:xx-large
+}
+.CabeceraSubtema
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+header
+{    
+    background-color: #63E2C6;
+    border: 2px solid black;
+    width: 80%;
+    height: 100px;
+    margin-left: 10%;
+    z-index: 100;
+    top: 0px;
+    left: 0px;
+    right:0px;
+    border-radius: 10px;
+
+    position: -webkit-sticky;
+    position: sticky;
+
+    animation-duration: 3s;
+    animation-name: header;
+}
+.footer div,
+.sticky-menu div {
+  display: inline-block;
+  padding: 20px;
+  text-align: center;
+  width: 100px;
+}
+.container div {
+    margin-top: 5% auto;
+}
+  
+.container{
+    background-color: #26532B;
+
+
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+}
+
+.Tarjeta 
+{
+    background-color: #6EF9F5;
+    border: 2px solid black;
+    width: 80%;
+    height: 80%;
+
+    text-align:justify;
+    border-radius: 10px;
+
+    margin: 5% auto;
+
+    position: relative;
+
+
+    animation-duration: 4s;
+    animation-name: container;
+}
+.MargenTarjeta
+{
+    margin-top: 5%;
+}
+.TarjetaImagen
+{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.PieImagen
+{
+    text-align: center;
+    font-family:calibri;
+}
+.VolverInicio
+{
+    text-align: center;
+    font-family:calibri;
+    margin-bottom: 30px;
+}
+.Info
+{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.Final
+{
+    text-align: center;
+}

@@ -1,0 +1,372 @@
+body {
+    margin: 0px;
+  }
+/* Opciones print */
+
+@media print and (width: 21cm) and (height: 29.7cm) {
+    @page {
+       margin: 3cm;
+    }
+ }
+
+/* Animaciones*/
+@keyframes slideIn
+{
+    from{
+        width: 90%;
+    }
+    to{
+        width: 100%;
+    }
+}
+@keyframes barraNavegacion
+{
+    from{
+        opacity: 0;
+        top: -100px;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes aparicionImagen
+{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/* Menú superior */
+header
+{    
+    background-color: #080705;
+    z-index: 100;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-position: center center;
+    position: fixed; 
+    display: flex;
+
+    animation-duration: 0.5s;
+    animation-name: barraNavegacion;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    font-size: 1.1vw;
+}
+form{
+    text-align: center;
+}
+form p{
+    font-size: 2vw;
+}
+input{
+    font-size: 2vw;
+    width: 40vw;
+}
+textarea{
+    font-size: 1.5vw;
+    width: 70vw;
+    height: 13vw;
+}
+footer {
+    background-color: black;
+    color: white;
+    font-size: 1.5vw;
+    /* Pongo las letras en el medio de la caja q genero */
+    display: flex;
+    height: 100% auto;
+    margin: 0 auto -60px;
+    bottom: 0;
+    min-height: 100%;
+    justify-content: space-around;
+}
+aside{
+    padding-top: 2vw;
+}
+.Redes{
+    background-color: #92140C;
+    border: 0.2vw solid black;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Favicon{
+    height: 2vw;
+
+    background-color: white;
+
+    padding: 0.5vw;
+    border-radius: 10vw;
+    transition: transform .2s;
+}
+
+/* Al poner el ratón encima ==> Agrandar/escalar texto gradualmente */
+.Favicon:hover{
+    transform: scale(1.2);
+}
+/* Tabla menú "header" */
+header nav ul li{
+    display: inline-block;
+    padding-left: 2vw;
+    padding-right: 6vw;
+    box-sizing: border-box;
+}
+article{
+    padding-left: 3vw;
+    padding-right: 3vw;
+    display: flex;
+}
+/* Al poner el ratón encima ==> Agrandar/escalar texto gradualmente y cambiar color*/
+header nav ul li h3:hover{
+    color: #912F40;
+    transition: transform .2s;
+    transform: scale(1.2);
+}
+.Contact{
+    color: white;
+    text-decoration: none;
+    font-size: 100%;
+
+    background-color: #92140C;
+
+    padding: 0.9vw;
+    border-radius: 25vw;
+    transition: transform .2s;
+}
+/* Al poner el ratón encima ==> Agrandar/escalar texto gradualmente */
+.Contact:hover{
+    transform: scale(1.2);
+}
+.Portfolio{
+    color: white;
+    text-decoration: none;
+}
+body {
+    background-color: #912F40;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+main{
+    margin-top: 7vw;
+    animation-duration: 0.8s;
+    animation-name: slideIn;
+}
+/* Info cuadro principal body */
+section
+{
+    background-color: #FFFFFA;
+    border: 3px solid black;
+    width: 90%;
+    border-radius: 10px;
+
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+/* Encabezados tarjetas con h1/h2*/
+section h1{
+    font-size: 3vw;
+    text-align: center;
+}
+section h2{
+    font-size: 3vw;
+    text-align: center;
+}
+div p a{
+    text-align:justify;
+    display: flex;
+    margin: 0 auto;
+}
+.FirstParagraphArt{
+    margin-top: 7vw;
+    padding-right: 12vw;
+    text-align:justify;
+    display: flex;
+}
+p a{
+    padding-left: 6vw;
+    text-align:justify;
+    display: flex;
+}
+.Mail form{
+    width: 50vw;
+    max-width: 100%;
+    position: relative;
+    display: flex;
+}
+.Mail form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 1vw 10vw 1vw 1vw;
+    border: 0.2vw solid;
+    outline: none;
+    border-radius: 5vw;
+}
+.Mail form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 1vw 3vw;
+    border-radius: 30vw;
+    background-color: #92140C;
+    color: white;
+    box-shadow: 0vw 0vw 5vw #000 0vw 0vw 15vw #858585;
+    top: 0.25vw;
+    right: .1vw;
+}
+
+/* Tabla redes sociales" */
+.Redes{
+    border-radius: 10px;
+    padding: 1vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+/* Texto al lado de la imagen d la tarjeta inicial */
+.FirstParagraph{
+    margin-top: 7vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    text-align:justify;
+}
+.CalaCostaAmalfi{
+    width: 25vw;
+    height: 25vw;
+    
+    background-color: #92140C;
+
+    padding: 1vw;
+    border-radius: 100%;
+
+    animation-duration: 1.3s;
+    animation-name: aparicionImagen;
+}
+.Positano{
+    width: 24vw;
+    height: 32vw;
+
+    background-color: #92140C;
+
+    padding: 1vw;
+    border-radius: 10%;
+
+    animation-duration: 1.3s;
+    animation-name: aparicionImagen;
+}
+.Arte1{
+    width: 51vw;
+    height: 38vw;
+
+    background-color: #92140C;
+    margin: 0px auto;
+    padding: 1vw;
+    border-radius: 10%;
+
+    animation-duration: 1.3s;
+    animation-name: aparicionImagen;
+}
+.Arte2{
+    width: 24vw;
+    height: 35vw;
+
+    background-color: #92140C;
+    margin: 0px auto;
+    padding: 1vw;
+    border-radius: 10%;
+
+    animation-duration: 1.3s;
+    animation-name: aparicionImagen;
+}
+.Arte3{
+    width: 38vw;
+    height: 26vw;
+
+    background-color: #92140C;
+    margin: 0px auto;
+    padding: 1vw;
+    border-radius: 10%;
+
+    animation-duration: 1.3s;
+    animation-name: aparicionImagen;
+}
+.Arte4{
+    width: 68vw;
+    height: 44vw;
+
+    background-color: #92140C;
+    margin: 0px auto;
+    padding: 1vw;
+    border-radius: 10%;
+
+    animation-duration: 1.3s;
+    animation-name: aparicionImagen;
+}
+audio{
+    margin-left: 20vw;
+    margin-top: 1vw;
+    margin-bottom: 5vw;
+    width: 50vw;
+}
+video{
+    width: 68vw;
+    height: 44vw;
+
+    background-color: #92140C;
+    margin: 10vw;
+    padding: 1vw;
+    border-radius: 10%;
+
+    animation-duration: 1.3s;
+    animation-name: aparicionImagen;
+}
+/* Opciones concretas ==> letras y títulos */
+h1{
+    font-family:Verdana;
+    text-align: center;
+    font-size: 50px;
+}
+.Beginning{
+    font-family:verdana;
+}
+p a{
+    font-family:calibri;
+    font-size: 1.7vw;
+}
+h2{
+    font-family:verdana;
+}
+h3{
+    font-family:verdana;
+}
+strong a{
+    font-family:verdana;
+    color: white;
+    font-size: 1.25vw;
+    text-decoration: none;
+}
+h4{
+    font-family:calibri;
+}
+p{
+    font-family:calibri;
+}
+a{
+    font-family:calibri;
+}
+span{
+    color: #92140C;
+}

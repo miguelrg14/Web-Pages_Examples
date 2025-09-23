@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- Lenguaje Español -->
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>DNI letter calculator</title>
+        <link rel="shortcut icon" href="./Img/Favicon/Calculator.png">
+        <link rel="stylesheet" href="./Estilos/EstiloDNI.css">
+    </head>
+    <!-- Empieza la página -->
+    <body>     
+        <!-- Enlazo el script al HTML -->
+        <script type="text/javascript" src="./Script/Script.js"></script>
+        <!-- Menú d navegación -->
+        <header>        
+            <nav>
+                <ul>
+                    <li><a href="FormularioDNI.html" class="LetraMenu">DNI letter calculator</a></li>
+                </ul>                
+            </nav>
+        </header>
+        <!-- Info -->
+        <main>
+            <!-- Info Proyecto general (1 artículo para el formulario en si y fuera los añadidos y decorados) -->
+            <section>
+                <img class="Doc2" src="./Img/Doc2.png" alt="">
+                <img class="Calculadora" src="./Img/Calculadora.png" onclick="Calculo2()" alt="">
+                <!-- Formulario en si -->
+                <form>
+                    <p><h1>Introduce los números de tu DNI!</h1></p>
+                    <p><input class="DNI" type="text" id="DNInums" name="dni" maxlength="8" required placeholder="Nº DNI" pattern="[0-9]{8}[A-Za-z]{1}" title="Debe poner hasta un máximo de 8 números para funcionar!" /></p>
+                    <img id="EM" class="ErrorMark" src="./Img/Error.png" alt="" title="ERROR! Revisa el input">
+                    <img id="CM" class="CheckMark" src="./Img/Check.png" alt="" title="Input valido!">
+                    <p><a class="Enviar"><input class="EnviarInput" type="button" value="Calcular" onclick="CalculoLetraDNI();"  title="Efectuar calculo letra"></a></p>
+                    <p class="LaLetraEs">
+                        La letra de este DNI es ==> <input class="Resultado" id="Resultado" readonly placeholder="Resultado" title="Resultado!"/>
+                    </p>   
+                </form>
+                <!-- Ayuda -->
+                <a class="Ayuda"  title="Ayuda"><img src="./Img/Ayuda.png" onclick="ocultar(1)" id="e1"></a>
+                <a id="Ayuda1" class="Error">Solo se pueden introducir números...</a>
+            </section>
+        </main>
+        <!-- Final / Descripción -->
+        <footer>
+            <p>
+                <a class="Negrita">Página realizada por Miguel Rodríguez Gallego</a>
+            </p>
+            <p>
+                <a>Este es un trabajo para la carrera de Informática e Ingeniería del videojuego</a>
+            </p>
+        </footer>
+    </body>
+</html>
